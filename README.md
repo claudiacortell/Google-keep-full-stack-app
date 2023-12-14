@@ -1,1 +1,3 @@
-# Google-keep-full-stack-app
+## My recreation of Google Keep
+
+Using React, Node.js, Express, MongoDB
