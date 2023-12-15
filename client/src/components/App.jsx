@@ -23,7 +23,7 @@ function App() {
 
     async function deleteData () {
       console.log("deleting data");
-      const response = await fetch("http://localhost:5000/api/deleteData", {
+      const response = await fetch("/api/deleteData", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -62,7 +62,7 @@ function App() {
     //write to mongodb
     async function postData () {
       console.log("posting data");
-      const response = await fetch("http://localhost:5000/api/postData", {
+      const response = await fetch("/api/postData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
