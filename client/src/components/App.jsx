@@ -4,7 +4,6 @@ import Note from "./Note";
 import Footer from "./Footer";
 
 function App() {
-  console.log("App mounted")
 
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
@@ -86,7 +85,6 @@ function App() {
   }
 
   useEffect(()=>{
-    console.log("INSIDE HERE")
     fetch("/api").then(
       response => response.json() 
     ).then(
